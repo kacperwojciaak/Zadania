@@ -1,21 +1,14 @@
-# Program wyciągający szczegółowe informacje z tekstu za pomocą wycinków (slicing)
-
+# dane pracownika w jednym ciągu
 employee = "Mr. John May, born on 1998-02-16"
 
-# Wyciągamy imię "John" (znaki od indeksu 4 do 8 włącznie, bo koniec przedziału nie jest wliczany)
-name = employee[4:8]
+# wycinam imię - od znaku nr 4 do 8 (komputer zatrzymuje się tuż przed 8, czyli przed spacją)
+print(f'Name: {employee[4:8]}')
 
-# Wyciągamy nazwisko "May" (indeksy od 9 do 12)
-surname = employee[9:12]
+# nazwisko zaczyna się na 9 pozycji (po spacji) i kończy przed przecinkiem na 12
+print(f'Surname: {employee[9:12]}')
 
-# Wyciągamy datę urodzenia na samym końcu (od indeksu 22 do końca)
-birth_date = employee[22:]
+# data zaczyna się od 22 znaku i leci do samego końca, więc po dwukropku zostawiam puste
+print(f'Born: {employee[22:]}')
 
-# Składamy inicjały z pierwszych liter imienia i nazwiska
-initials = name[0] + surname[0]
-
-# Wypisujemy wyniki w osobnych wierszach
-print(f'Name: {name}')
-print(f'Surname: {surname}')
-print(f'Born: {birth_date}')
-print(f'Initials: {initials}')
+# inicjały to po prostu pojedyncze litery: pierwsza z imienia (4) i pierwsza z nazwiska (9)
+print(f'Initials: {employee[4]}{employee[9]}')

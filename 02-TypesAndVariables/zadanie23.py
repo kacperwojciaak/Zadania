@@ -1,10 +1,14 @@
-# Program wypisujący inicjały imienia i nazwiska
-
+# wrzucam swoje dane
 name = 'Kacper'
 surname = 'Wójciak'
 
-# Wyciągamy pierwszy znak (indeks 0) z imienia oraz z nazwiska
-initials = name[0] + surname[0]
+# wyciągam inicjał imienia. nawiasy kwadratowe z zerem [0] 
+# mówią komputerowi: "daj mi pierwszą literę z tego słowa"
+print(name[0])
 
-# Wypisujemy inicjały na ekranie
-print(f'The initials of {name} {surname} are {initials}')
+# to samo dla nazwiska. też biorę pierwszą literę
+print(surname[0])
+
+# a tu wersja pro, jak to zrobić w jednej linijce używając f-stringa.
+# po prostu wrzucam obie wycięte litery obok siebie do klamerek
+print(f'My initials are: {name[0]}{surname[0]}')

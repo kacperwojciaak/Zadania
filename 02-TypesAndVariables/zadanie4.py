@@ -1,31 +1,23 @@
-### # Sekcja 2, Zadanie 2: Liczba operatorów, argumentów oraz wartości wyrażeń #
+# sprawdzam pierwsze wyrazenie: mnozenie ma pierszenstwo przed dodawaniem
+wypisz_1 = 3 * 2 + 1
+print("Wynik 1:", wypisz_1)
 
-# Wyrażenie 1: 3 * 2 + 1
-# Liczba operatorów: 2 (*, +) | Liczba argumentów: 3 (3, 2, 1)
-wynik1 = 3 * 2 + 1
-print("Wyrażenie 1:", wynik1)  # Wynik: 7
+# sprawdzam drugie wyrazenie: najpierw mnozenie, potem dodawanie
+wypisz_2 = 5 + 10 * 5
+print("Wynik 2:", wypisz_2)
 
-# Wyrażenie 2: 5 + 10 * 5
-# Liczba operatorów: 2 (+, *) | Liczba argumentów: 3 (5, 10, 5)
-wynik2 = 5 + 10 * 5
-print("Wyrażenie 2:", wynik2)  # Wynik: 55
+# sprawdzam trzecie wyrazenie: najpierw potegowanie, potem dzielenie, na koncu dodawanie
+wypisz_3 = 4 + 4 / 2 ** 2
+print("Wynik 3:", wypisz_3)
 
-# Wyrażenie 3: 4 + 4 / 2 ** 2
-# Liczba operatorów: 3 (+, /, **) | Liczba argumentów: 4 (4, 4, 2, 2)
-wynik3 = 4 + 4 / 2**2
-print("Wyrażenie 3:", wynik3)  # Wynik: 5.0
+# sprawdzam czwarte wyrazenie: modulo wykonuje sie od lewej do prawej
+wypisz_4 = 4 % 3 % 2 % 1
+print("Wynik 4:", wypisz_4)
 
-# Wyrażenie 4: 4 % 3 % 2 % 1
-# Liczba operatorów: 3 (%, %, %) | Liczba argumentów: 4 (4, 3, 2, 1)
-wynik4 = 4 % 3 % 2 % 1
-print("Wyrażenie 4:", wynik4)  # Wynik: 0
+# sprawdzam piate wyrazenie: najpierw potega, potem modulo i mnozenie, na koncu dodawanie
+wypisz_5 = 1 + 2 % 3 ** 4 * 5
+print("Wynik 5:", wypisz_5)
 
-# Wyrażenie 5: 1 + 2 % 3 ** 4 * 5
-# Liczba operatorów: 4 (+, %, **, *) | Liczba argumentów: 5 (1, 2, 3, 4, 5)
-wynik5 = 1 + 2 % 3**4 * 5
-print("Wyrażenie 5:", wynik5)  # Wynik: 11
-
-# Wyrażenie 6: True != False
-# Liczba operatorów: 1 (!=) | Liczba argumentów: 2 (True, False)
-wynik6 = True != False
-print("Wyrażenie 6:", wynik6)  # Wynik: True
+# sprawdzam szoste wyrazenie: czy prawda jest rozna od falszu
+wypisz_6 = True != False
+print("Wynik 6:", wypisz_6)

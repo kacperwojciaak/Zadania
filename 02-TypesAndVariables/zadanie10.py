@@ -1,12 +1,12 @@
-### # Program obliczający długość przekątnej prostokąta o bokach a i b #
+# importuje modul math, zeby miec dostep do funkcji pierwiastka (sqrt)
 import math
 
+# podaje boki prostokata
 a = 5
 b = 8
 
-# Twierdzenie Pitagorasa: przekątna = pierwiastek z (a^2 + b^2)
+# licze przekatna z twierdzenia Pitagorasa: pierwiastek z (a do kwadratu plus b do kwadratu)
 diagonal = math.sqrt(a**2 + b**2)
 
-print("Długość boku a:", a)
-print("Długość boku b:", b)
-print("Długość przekątnej prostokąta:", diagonal)
+# wypisuje wynik na ekranie
+print("Length of the diagonal:", diagonal)

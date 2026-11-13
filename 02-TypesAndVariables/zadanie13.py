@@ -1,15 +1,15 @@
-### # Poprawiony program obliczający średnią ocenę studenta #
-
-# Przypisujemy poprawne wartości do zmiennych (zmieniamy 'math' na 'math_grade', aby unikać konfliktów)
-math_grade = 5
+# Oceny z poszczególnych przedmiotów. 
+# Usunąłem hasz (#) przed math, żeby odblokować zmienną, bo inaczej komputer ją ignorował.
+math = 5
 art = 4
 music = 5
 
-# Konwertujemy tekst '3' na liczbę całkowitą (int)
-history = int('3')
+# Wywaliłem apostrofy wokół trójki. To ma być twarda liczba do liczenia, a nie tekst.
+history = 3
 
-# Obliczamy średnią: używamy nawiasów, żeby najpierw zsumować wszystkie oceny, a dopiero potem podzielić przez 4
-average = (math_grade + art + music + history) / 4
+# Liczę średnią. Dodałem nawiasy, żeby najpierw dodać wszystkie oceny, a dopiero potem podzielić całość przez 4.
+# Poprawiłem też literówki w nazwach przedmiotów (było mat, Art, muzic).
+average = (math + art + music + history) / 4
 
-# Wyświetlamy wynik, poprawiając cudzysłowy oraz literówkę w nazwie zmiennej
-print(f"Average grade is {average}")
+# Wypisuję wynik. Poprawiłem cudzysłowy na równe i literówkę w zmiennej (było averege).
+print("Average grade is", average)

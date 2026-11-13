@@ -1,15 +1,18 @@
-# Program obliczający cenę produktu po rabacie i wartość obniżki
+# pobieram cenę z klawiatury (używam float, bo są to pieniądze z ułamkiem)
+price = float(input("Enter price: "))
 
-# Wczytujemy cenę oraz rabat z klawiatury (cena jako float, rabat jako int lub float)
-price = float(input('Enter price: '))
-discount = float(input('Enter discount %: '))
+# pobieram wielkość rabatu w procentach. to mogą być pełne liczby, 
+# więc wystarczy int (np. 15, 20, 50)
+discount_percent = int(input("Enter discount %: "))
 
-# Obliczamy wartość obniżki (rabat w procentach dzielimy przez 100 i mnożymy przez cenę)
-reduction = price * (discount / 100)
+# liczę ile fizycznie pieniędzy urywa nam rabat.
+# (np. 15 / 100 to 0.15, mnożę to przez pełną cenę i mam kwotę obniżki)
+reduction = price * (discount_percent / 100)
 
-# Obliczamy nową cenę po rabacie
-price_with_discount = price - reduction
+# liczę nową cenę, odejmując kwotę obniżki od pełnej ceny z metki
+discounted_price = price - reduction
 
-# Wypisujemy wyniki, formatując liczby do dwóch miejsc po przecinku za pomocą :.2f
-print(f'Price with discount: {price_with_discount:.2f}')
-print(f'Reduction: {reduction:.2f}')
+# wypluwam wszystko na ekran.
+# :.2f obcina mi wszystkie pieniądze ładnie do dwóch miejsc po kropce.
+print(f"Price with discount: {discounted_price:.2f}")
+print(f"Reduction: {reduction:.2f}")

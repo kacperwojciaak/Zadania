@@ -1,17 +1,17 @@
-### # Program wykonujący podstawowe działania arytmetyczne i wyświetlający je za pomocą f-stringów #
-
-# Przypisujemy wartości do zmiennych a i b
+# ustawiam na sztywno liczby z zadania
 a = 3
 b = 5
 
-# Wypisujemy wynik dodawania: wstawiamy zmienne oraz wykonujemy dodawanie bezpośrednio w klamrach
-print(f"{a} + {b} = {a + b}")
+# używam f-stringa (literka f przed cytatem)
+# najpierw w klamerkach wrzucam same liczby, żeby zbudować wygląd równania,
+# a po znaku równości w klamerce od razu robię działanie matematyczne
+print(f'{a} + {b} = {a + b}')
 
-# Wypisujemy wynik odejmowania: wstawiamy zmienne oraz wykonujemy odejmowanie w klamrach
-print(f"{a} - {b} = {a - b}")
+# to samo dla odejmowania
+print(f'{a} - {b} = {a - b}')
 
-# Wypisujemy wynik mnożenia: wstawiamy zmienne oraz wykonujemy mnożenie w klamrach
-print(f"{a} * {b} = {a * b}")
+# i dla mnożenia 
+print(f'{a} * {b} = {a * b}')
 
-# Wypisujemy wynik dzielenia: wstawiamy zmienne oraz wykonujemy dzielenie w klamrach
-print(f"{a} / {b} = {a / b}")
+# i na koniec dzielenie 
+print(f'{a} / {b} = {a / b}')

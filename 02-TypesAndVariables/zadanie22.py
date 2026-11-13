@@ -1,18 +1,21 @@
-# Program obliczający liczbę znaków w imieniu, nazwisku oraz pełnym imieniu i nazwisku
-
-# Definiujemy zmienne z imieniem i nazwiskiem 
+# wrzucam swoje dane (Kacper Wójciak)
 name = 'Kacper'
 surname = 'Wójciak'
 
-# Funkcja len() sprawdza długość ciągu znaków (liczbę liter)
+# funkcja len() zlicza litery w moim imieniu . 
+# wynik ląduje w nowym pojemniku characters_in_name
 characters_in_name = len(name)
-characters_in_surname = len(surname)
 
-# Łączymy imię i nazwisko ze spacją w środku, żeby sprawdzić długość całości
-full_name = name + ' ' + surname
-characters_in_full_name = len(full_name)
-
-# Wypisujemy wyniki na ekranie
+# wypluwam info o imieniu, ładując pojemnik z wyliczoną liczbą w klamerki
 print(f'Your name has {characters_in_name} characters')
-print(f'Your surname has {characters_in_surname} characters')
-print(f'Your full name has {characters_in_full_name} characters')
+
+# robię to samo dla nazwiska, ale żeby było szybciej - wrzucam funkcję len() 
+# bezpośrednio w środek klamerki, komputer sam to policzy w locie
+print(f'Your surname has {len(surname)} characters')
+
+# sklejam imię z nazwiskiem (dodając spację w środku, żeby się nie zlały)
+full_name = name + ' ' + surname
+
+# wypisuję długość całości, wrzucając policzenie całego sklejonego tekstu w klamerkę.
+# spacja liczy się dla komputera jako normalny znak
+print(f'Your full name has {len(full_name)} characters')

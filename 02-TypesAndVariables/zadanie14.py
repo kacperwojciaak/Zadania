@@ -1,14 +1,15 @@
-### # Program wyświetlający dane osobowe oraz obliczający przyszły wiek przy użyciu f-stringów #
-
-# Przypisujemy wartości do zmiennych
+# wrzucam swoje dane do zmiennych 
 name = "Adam"
 age = 20
-height = 175
+height = 187
 
-# 1. Wyświetlamy imię, wiek oraz wzrost w jednym zdaniu za pomocą f-stringa
-print(
-    f"My name is {name}. I am {age} years old, and my height is {height} cm."
-)
+# dopisek 'f' przed 
+# dzięki niemu mogę wrzucać nazwy moich zmiennych prosto w tekst za pomocą klamerek 
+print(f"My name is {name}.")
 
-# 2. Obliczamy wiek za 6 lat bezpośrednio wewnątrz klamer {} f-stringa
+# tutaj wrzucam w klamerki zmienną od wieku i zmienną od wzrostu
+print(f"I am {age} years old, and my height is {height} cm.")
+
+# w klamerkach mogę nie tylko wyświetlać zmienne, ale też od razu robić matematykę.
+# dodaję 6 lat do obecnego wieku w locie.
 print(f"In 6 years I will be {age + 6} years old.")

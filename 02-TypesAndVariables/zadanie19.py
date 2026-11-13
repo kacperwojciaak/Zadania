@@ -1,16 +1,18 @@
-# Program obliczający objętość i pole powierzchni prostopadłościanu o bokach a, b i c
+# pobieram wymiary z klawiatury. 
+# od razu owijam inputa w funkcję int(), żeby w jednej szybkiej linijce 
+# pobrać tekst i od razu przerobić go na twardą liczbę do liczenia
+a = int(input('a='))
+b = int(input('b='))
+c = int(input('c='))
 
-# Wczytujemy boki z klawiatury i od razu zamieniamy tekst na liczby całkowite za pomocą int()
-a = int(input('Enter side a: '))
-b = int(input('Enter side b: '))
-c = int(input('Enter side c: '))
+# liczę objętość - po prostu mnożę wszystkie trzy boki przez siebie
+volume = a * b * c
 
-# Obliczamy objętość prostopadłościanu (wzór: a * b * c)
-cuboid_volume = a * b * c
+# liczę pole powierzchni. prostopadłościan ma 3 pary takich samych ścian.
+# liczę pole każdej z trzech różnych ścian (a*b, a*c, b*c), dodaję je do siebie 
+# i całość mnożę razy 2 (bo każda ściana ma swojego bliźniaka naprzeciwko)
+surface_area = 2 * (a * b + a * c + b * c)
 
-# Obliczamy pole powierzchni całkowitej prostopadłościanu (wzór: 2*ab + 2*bc + 2*ac)
-cuboid_surface_area = 2 * (a * b + b * c + a * c)
-
-# Wypisujemy wyniki na ekranie
-print(f'The volume of a cuboid with sides {a}, {b}, {c} is {cuboid_volume}')
-print(f'The surface area of a cuboid with sides {a}, {b}, {c} is {cuboid_surface_area}')
+# wypluwam wynik z użyciem f-stringa, żeby gładko wkleić zmienne w klamerkach
+print(f'The volume of a cuboid is {volume}')
+print(f'The surface area of a cuboid is {surface_area}')

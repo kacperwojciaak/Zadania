@@ -1,25 +1,22 @@
-### # Program obliczający populację i procentowy udział na półkulach #
-
-# Zdefiniowanie całkowitej liczby ludności świata
+# wrzucam na sztywno liczby z zadania, cała populacja to 8 mld
 total = 8000000000
 
-# Zdefiniowanie liczby ludzi na półkuli północnej
+# na północy siedzi 7.2 mld
 north = 7200000000
 
-# Obliczenie liczby ludzi na półkuli południowej (całość minus półkula północna)
+# reszta to południe, więc po prostu odejmuję północ od całości
 south = total - north
 
-# Wyświetlenie podstawowych informacji o populacji
+# wypluwam suche dane na ekran tak jak chcieli w poleceniu
 print("World population: ", total)
 print("Northern Hemisphere: ", north)
 
-# Obliczenie i wydrukowanie procentu dla półkuli północnej
-north_percentage = (north / total) * 100
-print(f"Northern Hemisphere in %: {north_percentage:.2f}%")
+# liczę procent dla północy (zwykły ułamek: część przez całość razy 100) 
+# i od razu drukuję wynik
+print("Northern Hemisphere in %: ", (north / total) * 100)
 
-# Wyświetlenie informacji dla półkuli południowej
+# to samo robię dla południa - najpierw liczba ludzi
 print("Southern Hemisphere: ", south)
 
-# Obliczenie i wydrukowanie procentu dla półkuli południowej
-south_percentage = (south / total) * 100
-print(f"Southern Hemisphere in %: {south_percentage:.2f}%")
+# i na sam koniec w ten sam sposób wyliczam procent dla południa
+print("Southern Hemisphere in %: ", (south / total) * 100)

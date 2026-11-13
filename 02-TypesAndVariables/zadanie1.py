@@ -1,23 +1,21 @@
-###
-# Kalkulator BMI (Body Mass Index)
-# Program pobiera od użytkownika wzrost i wagę, a następnie liczy wskaźnik BMI.
-#
-
-# input() zatrzymuje program i prosi użytkownika o wpisanie danych z klawiatury
+# pobieram wzrost w centymetrach od uzytkownika
 height = input('Enter your height in cm: ')
+
+# pobieram wage w kilogramach
 weight = input('Enter your weight in kg: ')
 
-# Zamieniamy wpisany tekst na liczby całkowite (int - integer), żeby móc wykonywać na nich obliczenia
+# zamieniam wzrost na liczbe calkowita
 height = int(height)
+
+# zamieniam wage na liczbe calkowita
 weight = int(weight)
 
-# Wzór na BMI: waga / (wzrost w metrach do kwadratu). 
-# Dzielimy wzrost przez 100, żeby zamienić centymetry na metry. ** 2 oznacza potęgowanie.
+# liczę BMI: waga dzielona przez wzrost w metrach podniesiony do kwadratu
 bmi = weight / (height/100)**2
 
-# round() zaokrągla nasz wynik do 2 miejsc po przecinku
+# zaokrąglam wynik do dwóch miejsc po przecinku
 bmi = round(bmi, 2)
 
-# Wypisujemy gotowy wynik na ekran
+# wypisuje wynik na ekranie
 print('Your BMI is', bmi)
 print('Check on the Internet if your BMI is ok!!')

@@ -1,22 +1,20 @@
-### # Sekcja 2, Zadanie 3: Sprawdzanie typów danych za pomocą funkcji type() #
+# sprawdzam sobie, co wypluje dla zwyklej liczby calkowitej
+print(type(50))
 
-# 1. Liczba całkowita
-print(type(50))  # Wynik: <class 'int'>
+# sprawdzam jak Python potraktuje liczbu z kropka
+print(type(149.17))
 
-# 2. Liczba zmiennoprzecinkowa (dziesiętna)
-print(type(149.17))  # Wynik: <class 'float'>
+# tutaj mnoze dwie calkowite, wiec wynik powinien zostac intem
+print(type(4 * 7))
 
-# 3. Wynik mnożenia dwóch liczb całkowitych
-print(type(4 * 7))  # Wynik: <class 'int'>
+# a tu mnoze przez liczbu z kropka (float), zobaczmy czy zmienny typ na float
+print(type(4.0 * 7))
 
-# 4. Wynik mnożenia liczby zmiennoprzecinkowej przez całkowitą
-print(type(4.0 * 7))  # Wynik: <class 'float'>
+# teraz test na zwykly tekst w cudzyslowie
+print(type("Uniwersytet Ekonomiczny w Krakowie"))
 
-# 5. Ciąg znaków (tekst)
-print(type("Krakow University of Economics"))  # Wynik: <class 'str'>
+# sprawdzenie czystej prawdy logicznej (True)
+print(type(True))
 
-# 6. Wartość logiczna (prawda/fałsz)
-print(type(True))  # Wynik: <class 'bool'>
-
-# 7. Wynik wyrażenia logicznego / porównania
-print(type(2 > 5))  # Wynik: <class 'bool'>
+# sprawdzam jaki typ zwroci wynik prostego porownania liczbowego
+print(type(2 > 5))

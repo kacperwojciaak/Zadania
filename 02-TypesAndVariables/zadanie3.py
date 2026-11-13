@@ -1,33 +1,31 @@
-### # Sekcja 2, Zadanie 1: Wyjaśnienie i test operatorów w Pythonie #
+# testuje zwykly plus - dodaje liczby albo skleja teksty
+dodawanie = 5 + 3
+print("Wynik dodawania:", dodawanie)
 
-# 1. Dodawanie (+)
-# Służy do dodawania liczb lub łączenia tekstów.
-print("Dodawanie:", 5 + 3)
+# testuje mnozenie - mnozy liczby albo powtarza tekst
+mnozenie = 4 * 2
+print("Wynik mnozenia:", mnozenie)
 
-# 2. Mnożenie (*)
-# Służy do mnożenia liczb lub powielania tekstów.
-print("Mnożenie:", 4 * 2)
+# testuje potegowanie (dwie gwiazdki) - podnosi do potegi, np. 2 do potegi 3 to 2*2*2
+potega = 2 ** 3
+print("Wynik potegowania:", potega)
 
-# 3. Potęgowanie (**)
-# Podnosi liczbę do określonej potęgi.
-print("Potęgowanie:", 2 ** 3)
+# testuje zwykle dzielenie - dzieli liczby i daje wynik z przecinkiem (float)
+dzielenie = 7 / 2
+print("Wynik dzielenia:", dzielenie)
 
-# 4. Dzielenie (/)
-# Dzieli liczby i zwraca wynik zmiennoprzecinkowy (float).
-print("Dzielenie:", 10 / 4)
+# testuje dzielenie calkowitoliczbowe (dwie kreski) - dzieli, ale obcina reszte po przecinku
+dzielenie_calkowite = 7 // 2
+print("Wynik dzielenia calkowitego:", dzielenie_calkowite)
 
-# 5. Dzielenie całkowitoliczbowe (//)
-# Dzieli liczby i zaokrągla wynik w dół do liczby całkowitej.
-print("Dzielenie całkowite:", 10 // 4)
+# testuje modulo (procent) - daje samą resztę z dzielenia (np. 7 podzielone na 3 to 2, a reszty zostaje 1)
+reszta = 7 % 3
+print("Reszta z dzielenia (modulo):", reszta)
 
-# 6. Reszta z dzielenia / Modulo (%)
-# Zwraca resztę z dzielenia całkowitego.
-print("Modulo:", 10 % 3)
+# testuje wieksze (znak dzioba) - sprawdza czy lewa strona jest wieksza (da True albo False)
+czy_wieksze = 5 > 3
+print("Czy 5 jest wieksze od 3?:", czy_wieksze)
 
-# 7. Większe niż (>)
-# Sprawdza, czy lewa strona jest większa od prawej (zwraca True lub False).
-print("Większe niż:", 7 > 5)
-
-# 8. Mniejsze lub równe (<=)
-# Sprawdza, czy lewa strona jest mniejsza lub równa prawej.
-print("Mniejsze lub równe:", 5 <= 5)
+# testuje mniejsze lub rowne - sprawdza czy lewa strona jest mniejsza lub rowna prawej
+czy_mniejsze_lub_rowne = 4 <= 4
+print("Czy 4 jest mniejsze lub rowne 4?:", czy_mniejsze_lub_rowne)

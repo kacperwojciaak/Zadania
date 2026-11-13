@@ -1,12 +1,11 @@
-# Program wypisujący skrót nazwy uniwersytetu
-
+# nasza długa nazwa uczelni zamknięta w zmiennej
 university = "Krakow University of Economics"
 
-# Pobieramy pierwsze litery poszczególnych słów za pomocą ich indeksów w tekście:
-# K - indeks 0
-# U - indeks 7 (pierwsza litera w "University")
-# E - indeks 21 (pierwsza litera w "Economics")
+
 abbreviation = university[0] + university[7] + university[21]
 
-# Wypisujemy wynik na ekranie
-print(f'The abbreviation of "{university}" is {abbreviation}')
+# wypluwam gotowy skrót na ekran
+print(abbreviation)
+
+# alternatywa z f-stringiem (robi to samo, ale bez tworzenia zmiennej abbreviation)
+print(f'Skrót uczelni to: {university[0]}{university[7]}{university[21]}')

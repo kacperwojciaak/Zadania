@@ -1,13 +1,15 @@
-### # Program do zamiany wartości dwóch zmiennych z użyciem zmiennej pomocniczej #
+# program do zamiany wartości dwóch zmiennych za pomocą zmiennej pomocniczej
 x = 7
 y = 34
-z = 0  # Dodatkowa, pomocnicza zmienna
+z = 0  # dodatkowa, pomocnicza zmienna
 
+# pokazuję jak wyglądało przed zamianą
 print("Before swapping: x=", x, "y=", y)
 
-# Zamiana wartości z użyciem zmiennej z
-z = x  # z przechowuje chwilowo wartość x (czyli 7)
-x = y  # x przyjmuje wartość y (czyli 34)
-y = z  # y przyjmuje zapisaną w z pierwotną wartość x (czyli 7)
+# robię swap (zamianę) wartości przy użyciu zmiennej pomocniczej z
+z = x  # chowam siódemkę do zeszyny (z ma teraz 7)
+x = y  # przypisuję trzydzieści cztery do x
+y = z  # wyciągam siódemkę z z i daję do y
 
+# pokazuję wynik po zamianie
 print("After swapping: x=", x, "y=", y)
